@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel = "stylesheet" href = "{% static 'css/add.css' %}">
+</head>
+<body>
+    <h1>Welcome {{empname}}</h1>
+    <h2>{{greetings}}</h2>
+    {{display_date}}
+    <img scr = "{% static 'images/img1.jpg' %}" alt = "Coat image">
+
+</body>
+</html>
