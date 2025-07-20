@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModelDemo</title>
+</head>
+<body>
+    {% if emp_list %}
+    <table>
+    {% for employee in emp_list %}
+    <tr>
+    <td>{{employee.empNo}}</td><br>
+    <td>{{employee.empName}}</td><br>
+    <td>{{employee.empSalary}}</td><br>
+    <td>{{employee.empAddress}}</td><br>
+    </tr>
+    {% endfor %}
+    {% endif %}
+</table>
+</body>
+</html>
